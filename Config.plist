@@ -336,6 +336,26 @@
 		</dict>
 		<key>Tools</key>
 		<array>
+			<dict>
+				<key>Name</key>
+				<string>UEFI Shell</string>
+				<key>Comment</key>
+				<string>Not signed for security reasons</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>Shell.efi</string>
+			</dict>
+			<dict>
+				<key>Name</key>
+				<string>Modified Grub shell</string>
+				<key>Comment</key>
+				<string>cf. https://github.com/datasone/grub-mod-setup_var</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>modgrubshell.efi</string>
+			</dict>
 		</array>
 		<key>Entries</key>
 		<array/>
