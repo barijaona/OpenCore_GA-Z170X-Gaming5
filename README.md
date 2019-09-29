@@ -48,9 +48,7 @@ Another possible approach for customizing USB would be to use [USBMap](https://g
 
 I use dynamic power management injection to enable HWP (Intel Speed Shift).
 
-If you have another CPU model than the one I use, you might need to run  [ssdtPRGen.sh](https://github.com/Piker-Alpha/ssdtPRGen.sh) to generate your own version of SSDT-CPU.aml in order to inject a `One` plugin-type, enable Apple's X86PlatformPlugin.kext and therefore take full advantage of your processor. Afterward, you may have to add a `cf-frequency-data` entry into the above mentioned SSDT to enable HWP and set frequency vectors.
-
-More details can be found at instructions for [CPUFriend installation](https://github.com/acidanthera/CPUFriend/blob/master/Instructions.md).
+If you intend to use the same SMBIOS and have a non-Skylake CPU, you will probably have to modify the `cf-frequency-data` entry into SSDT-CPU.aml. More details can be found at instructions for [CPUFriend installation](https://github.com/acidanthera/CPUFriend/blob/master/Instructions.md).
 
 If you find this a bit complex, just disable/remove `SSDT-CPU.aml` and `CPUFriend.kext`.
 
