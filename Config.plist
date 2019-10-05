@@ -473,7 +473,7 @@
 			<key>DeviceProperties</key>
 			<false/>
 			<key>FirmwareVolume</key>
-			<false/>
+			<true/>
 			<key>HashServices</key>
 			<false/>
 			<key>UnicodeCollation</key>
@@ -492,13 +492,13 @@
 			<key>IgnoreTextInGraphics</key>
 			<false/>
 			<key>ProvideConsoleGop</key>
-			<false/>
+			<true/>
 			<key>ReleaseUsbOwnership</key>
 			<false/>
 			<key>ReplaceTabWithSpace</key>
 			<false/>
 			<key>RequestBootVarRouting</key>
-			<false/>
+			<true/>
 			<key>SanitiseClearScreen</key>
 			<false/>
 		</dict>
