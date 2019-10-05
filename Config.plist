@@ -300,7 +300,7 @@
 			<key>PollAppleHotKeys</key>
 			<false/>
 			<key>Resolution</key>
-			<string></string>
+			<string>Max</string>
 			<key>ShowPicker</key>
 			<true/>
 			<key>Timeout</key>
