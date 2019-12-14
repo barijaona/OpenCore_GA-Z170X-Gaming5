@@ -68,7 +68,7 @@ If you want to generate your own serial numbers, you will have to follow the ins
 
 For increased legitibility, sources or .dsl of DSDT/SSDT patches (which are .aml files in the `ACPI` folder) are available in the `Sources-ACPI` folder.
 
-Note that before upgrading to a new macOS version (for instance, going from 10.15.0 to 10.15.1), I recommend updating [OpenCorePkg](https://github.com/acidanthera/OpenCorePkg/releases), [AppleSupportPkg](https://github.com/acidanthera/AppleSupportPkg/releases), [Lilu](https://github.com/acidanthera/Lilu/releases) and the [relevant Lilu plugins](https://github.com/acidanthera/Lilu/blob/master/KnownPlugins.md).
+Note that before upgrading to a new macOS version (for instance, going from 10.15.0 to 10.15.1),it is recommended to update [Lilu](https://github.com/acidanthera/Lilu/releases), the [relevant Lilu plugins](https://github.com/acidanthera/Lilu/blob/master/KnownPlugins.md), [AppleSupportPkg](https://github.com/acidanthera/AppleSupportPkg/releases), then [OpenCorePkg](https://github.com/acidanthera/OpenCorePkg/releases).
 
 ### About license
 
