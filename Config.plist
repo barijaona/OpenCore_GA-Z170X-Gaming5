@@ -53,8 +53,6 @@
 			<false/>
 			<key>DisableVariableWrite</key>
 			<false/>
-			<key>DiscardHibernateMap</key>
-			<false/>
 			<key>EnableSafeModeSlide</key>
 			<true/>
 			<key>EnableWriteUnprotector</key>
@@ -275,7 +273,7 @@
 			<false/>
 			<key>PanicNoKextDump</key>
 			<false/>
-			<key>ThirdPartyTrim</key>
+			<key>ThirdPartyDrives</key>
 			<false/>
 			<key>XhciPortLimit</key>
 			<false/>
