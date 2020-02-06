@@ -454,7 +454,6 @@
 			<string>ApfsDriverLoader.efi</string>
 			<string>AppleUsbKbDxe.efi</string>
 			<string>FwRuntimeServices.efi</string>
-			<string>VirtualSmc.efi</string>
 		</array>
 		<key>Protocols</key>
 		<dict>
