@@ -10,7 +10,7 @@
 				<key>Comment</key>
 				<string>Used by CpuFriend.kext</string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>Path</key>
 				<string>SSDT-CPU.aml</string>
 			</dict>
@@ -185,7 +185,7 @@
 				<key>Comment</key>
 				<string>CPU Power Management data (enable Skylake HWP)</string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/CPUFriend</string>
 				<key>MaxKernel</key>
