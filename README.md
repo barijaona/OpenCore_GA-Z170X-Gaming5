@@ -27,9 +27,13 @@ To sumarize the hardware used :
 
 #### BIOS
 
-This board is notoriously picky regarding memory, so you might have to configure the BIOS with a single memory stick at first. I currently use BIOS F20, which runs OK after forcing the board to stick to the memory speed of 2133 MHz during initial startup.
+This board is notoriously picky regarding memory, so you might have to configure the BIOS with a single memory stick at first. I currently use BIOS F22f, which runs OK as far as the memory sticks use the two slots nearest to the CPU. Your mileage may vary…
 
 Most settings can be seen in this [photo album](https://www.flickr.com/photos/barijaona/albums/72157683707850861 "A Flickr photo album").
+
+The OpenCore documentation recommends that the setup allows macOS to unlock the `0xE2` registry. My configuration won't boot without this (I haven't tested the `AppleCpuPmCfgLock` and `AppleXcpmCfgLock` quirks). As a `CFG Lock` option is available in the firmware, but is hidden from the BIOS GUI, I included a GRUB shell [modified by <i>datasone</i>](https://github.com/datasone/grub-mod-setup_var "A modified grub allowing tweaking hidden BIOS settings") to access this option.
+
+Therefore, for this motherboard and BIOS F20 or F22f, you will have to access this GRUB shell through the initial menu, type the command `setup_var 0x4FE 0x00`, and reboot afterwards. For other motherboards or other version of BIOSes, the OpenCore documentation explains how to find the correct value.
 
 #### USB
 
