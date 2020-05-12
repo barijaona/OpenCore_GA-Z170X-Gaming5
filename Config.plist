@@ -488,7 +488,7 @@
 			<key>AppleKeyMap</key>
 			<true/>
 			<key>AppleSmcIo</key>
-			<false/>
+			<true/>
 			<key>AppleUserInterfaceTheme</key>
 			<false/>
 			<key>ConsoleControl</key>
