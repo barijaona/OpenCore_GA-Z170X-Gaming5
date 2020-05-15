@@ -73,11 +73,19 @@
 			<false/>
 			<key>ProtectMemoryRegions</key>
 			<false/>
+			<key>ProtectSecureBoot</key>
+			<false/>
+			<key>ProtectUefiServices</key>
+			<false/>
 			<key>ProvideCustomSlide</key>
+			<false/>
+			<key>RebuildAppleMemoryMap</key>
 			<false/>
 			<key>SetupVirtualMap</key>
 			<true/>
 			<key>SignalAppleOS</key>
+			<false/>
+			<key>SyncRuntimePermissions</key>
 			<false/>
 		</dict>
 	</dict>
@@ -109,7 +117,7 @@
 				<key>BundlePath</key>
 				<string>Lilu.kext</string>
 				<key>Comment</key>
-				<string></string>
+				<string>Patch engine</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
@@ -125,7 +133,7 @@
 				<key>BundlePath</key>
 				<string>VirtualSMC.kext</string>
 				<key>Comment</key>
-				<string></string>
+				<string>SMC emulator</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
@@ -173,7 +181,7 @@
 				<key>BundlePath</key>
 				<string>WhateverGreen.kext</string>
 				<key>Comment</key>
-				<string>Video card</string>
+				<string>Video patches</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
@@ -205,7 +213,7 @@
 				<key>BundlePath</key>
 				<string>AppleALC.kext</string>
 				<key>Comment</key>
-				<string>Sound</string>
+				<string>Audio patches</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
@@ -299,15 +307,25 @@
 			<false/>
 			<key>AppleXcpmExtraMsrs</key>
 			<false/>
+			<key>AppleXcpmForceBoost</key>
+			<false/>
 			<key>CustomSMBIOSGuid</key>
 			<false/>
 			<key>DisableIoMapper</key>
 			<false/>
+			<key>DisableRtcChecksum</key>
+			<false/>
+			<key>DummyPowerManagement</key>
+			<false/>
 			<key>ExternalDiskIcons</key>
+			<false/>
+			<key>IncreasePciBarSize</key>
 			<false/>
 			<key>LapicKernelPanic</key>
 			<false/>
 			<key>PanicNoKextDump</key>
+			<false/>
+			<key>PowerTimeoutKernelPanic</key>
 			<false/>
 			<key>ThirdPartyDrives</key>
 			<false/>
@@ -325,6 +343,8 @@
 			<integer>0</integer>
 			<key>HibernateMode</key>
 			<string>Auto</string>
+			<key>HideAuxiliary</key>
+			<false/>
 			<key>HideSelf</key>
 			<true/>
 			<key>PickerAttributes</key>
@@ -337,11 +357,15 @@
 			<false/>
 			<key>ShowPicker</key>
 			<true/>
+			<key>TakeoffDelay</key>
+			<integer>0</integer>
 			<key>Timeout</key>
 			<integer>5</integer>
 		</dict>
 		<key>Debug</key>
 		<dict>
+			<key>AppleDebug</key>
+			<false/>
 			<key>DisableWatchDog</key>
 			<false/>
 			<key>DisplayDelay</key>
@@ -361,6 +385,8 @@
 			<false/>
 			<key>AuthRestart</key>
 			<true/>
+			<key>BootProtect</key>
+			<string>None</string>
 			<key>ExposeSensitiveData</key>
 			<integer>2</integer>
 			<key>HaltLevel</key>
@@ -389,12 +415,14 @@
 			<dict>
 				<key>Arguments</key>
 				<string></string>
+				<key>Auxiliary</key>
+				<false/>
 				<key>Comment</key>
 				<string>Not signed for security reasons</string>
-				<key>Name</key>
-				<string>Grub shell with modified setup_var</string>
 				<key>Enabled</key>
 				<true/>
+				<key>Name</key>
+				<string>Grub shell with modified setup_var</string>
 				<key>Path</key>
 				<string>modGRUBShell.efi</string>
 			</dict>
@@ -554,12 +582,16 @@
 			<false/>
 			<key>AppleBootPolicy</key>
 			<false/>
+			<key>AppleDebugLog</key>
+			<false/>
 			<key>AppleEvent</key>
 			<false/>
 			<key>AppleImageConversion</key>
 			<false/>
 			<key>AppleKeyMap</key>
 			<true/>
+			<key>AppleRtcRam</key>
+			<false/>
 			<key>AppleSmcIo</key>
 			<true/>
 			<key>AppleUserInterfaceTheme</key>
@@ -592,6 +624,8 @@
 			<key>UnblockFsConnect</key>
 			<false/>
 		</dict>
+		<key>ReservedMemory</key>
+		<array/>
 	</dict>
 </dict>
 </plist>
