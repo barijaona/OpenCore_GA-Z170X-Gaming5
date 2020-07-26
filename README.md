@@ -52,6 +52,8 @@ Another possible approach for customizing USB would be to use [USBMap](https://g
 
 I use dynamic power management injection to enable HWP (Intel Speed Shift).
 
+Note that while Intel Skylake processors support HWP, Apple does not implement it with iMac17,1 configuration. So, I had to [hack a litle bit to generate frequency data derived from one used by MacBook9,1](https://github.com/barijaona/OpenCore_GA-Z170X-Gaming5/commit/492580325d94d4b6e30c637626880df3bcbb7188 "Commit 4925803 committed 10 May 2020").
+
 If you intend to use the same SMBIOS and have a non-Skylake CPU, you will probably have to modify the `cf-frequency-data` entry into SSDT-CPU.aml. More details can be found at instructions for [CPUFriend installation](https://github.com/acidanthera/CPUFriend/blob/master/Instructions.md).
 
 If you find this a bit complex, just disable/remove `SSDT-CPU.aml` and `CPUFriend.kext`.
@@ -70,9 +72,15 @@ If you want to generate your own serial numbers, you will have to follow the ins
 
 ### Additional notes
 
-For increased legitibility, sources or .dsl of DSDT/SSDT patches (which are .aml files in the `ACPI` folder) are available in the `Sources-ACPI` folder.
+Be safe ! A syntax error in your `Config.plist` may block booting:
 
-Note that before upgrading to a new macOS version (for instance, going from 10.15.0 to 10.15.1),it is recommended to update [Lilu](https://github.com/acidanthera/Lilu/releases), the [relevant Lilu plugins](https://github.com/acidanthera/Lilu/blob/master/KnownPlugins.md), [AppleSupportPkg](https://github.com/acidanthera/AppleSupportPkg/releases), then [OpenCorePkg](https://github.com/acidanthera/OpenCorePkg/releases).
+- always backup your working `Config.plist` to `Config.sav`
+- after any modification of `Config.plist`, check it with the `ConfigValidity` tool provided within OpenCore's `Utilities` folder.
+- remain prepared with [a USB stick with a UEFI shell](https://kc.mcafee.com/corporate/index?page=content&id=KB90801&locale=en_US "How to create a bootable USB media to access the default EFI shell") to be able to restore from `Config.sav`
+
+Note that before upgrading to a new macOS version (for instance, going from 10.15.0 to 10.15.1), it is recommended to update [Lilu](https://github.com/acidanthera/Lilu/releases), the [relevant Lilu plugins](https://github.com/acidanthera/Lilu/blob/master/KnownPlugins.md), [AppleSupportPkg](https://github.com/acidanthera/AppleSupportPkg/releases) if you use it, then [OpenCorePkg](https://github.com/acidanthera/OpenCorePkg/releases).
+
+For increased legitibility, sources or .dsl of DSDT/SSDT patches (which are .aml files in the `ACPI` folder) are available in the `Sources-ACPI` folder.
 
 ### About license
 
