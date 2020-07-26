@@ -31,7 +31,7 @@
 				<string>SSDT-EC-USBX.aml</string>
 			</dict>
 		</array>
-		<key>Block</key>
+		<key>Delete</key>
 		<array/>
 		<key>Patch</key>
 		<array/>
