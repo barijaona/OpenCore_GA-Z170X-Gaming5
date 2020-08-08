@@ -33,7 +33,7 @@ Most settings can be seen in this [photo album](https://www.flickr.com/photos/ba
 
 The OpenCore documentation recommends that the setup allows macOS to unlock the `0xE2` registry. My configuration won't boot without this (I haven't tested the `AppleCpuPmCfgLock` and `AppleXcpmCfgLock` quirks). As a `CFG Lock` option is available in the firmware, but is hidden from the BIOS GUI, I included a GRUB shell [modified by <i>datasone</i>](https://github.com/datasone/grub-mod-setup_var "A modified grub allowing tweaking hidden BIOS settings") to access this option.
 
-Therefore, for this motherboard and BIOS F20 or F22f, you will have to access this GRUB shell through the initial menu, type the command `setup_var 0x4FE 0x00`, and reboot afterwards. For other motherboards or other version of BIOSes, the OpenCore documentation explains how to find the correct value.
+Therefore, for this motherboard and BIOS F20 or F22f, you will have to access this GRUB shell through the initial menu, type the command `setup_var 0x4EF 0x00`, and reboot afterwards. For other motherboards or other version of BIOSes, the OpenCore documentation explains how to find the correct value.
 
 #### USB
 
