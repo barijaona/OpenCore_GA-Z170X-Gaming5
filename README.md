@@ -75,10 +75,10 @@ If you want to generate your own serial numbers, you will have to follow the ins
 Be safe ! A syntax error in your `Config.plist` may block booting:
 
 - always backup your working `Config.plist` to `Config.sav`
-- after any modification of `Config.plist`, check it with the `ConfigValidity` tool provided within OpenCore's `Utilities` folder.
+- after any modification of `Config.plist`, check it by running the `ocvalidate` tool (provided within OpenCore's 'Utilities' folder) with the file as an argument.
 - remain prepared with [a USB stick with a UEFI shell](https://kc.mcafee.com/corporate/index?page=content&id=KB90801&locale=en_US "How to create a bootable USB media to access the default EFI shell") to be able to restore from `Config.sav`
 
-Note that before upgrading to a new macOS version (for instance, going from 10.15.0 to 10.15.1), it is recommended to update [Lilu](https://github.com/acidanthera/Lilu/releases), the [relevant Lilu plugins](https://github.com/acidanthera/Lilu/blob/master/KnownPlugins.md), [AppleSupportPkg](https://github.com/acidanthera/AppleSupportPkg/releases) if you use it, then [OpenCorePkg](https://github.com/acidanthera/OpenCorePkg/releases).
+Note that before upgrading to a new macOS version (for instance, going from 10.15.0 to 10.15.1), it is recommended to update [Lilu](https://github.com/acidanthera/Lilu/releases), the [relevant Lilu plugins](https://github.com/acidanthera/Lilu/blob/master/KnownPlugins.md), then [OpenCorePkg](https://github.com/acidanthera/OpenCorePkg/releases).
 
 For increased legitibility, sources or .dsl of DSDT/SSDT patches (which are .aml files in the `ACPI` folder) are available in the `Sources-ACPI` folder.
 
