@@ -20,21 +20,6 @@
 	<string>1.0</string>
 	<key>IOKitPersonalities</key>
 	<dict>
-		<key>AppleUSBXHCILPTH</key>
-		<dict>
-			<key>CFBundleIdentifier</key>
-			<string>com.apple.driver.usb.AppleUSBXHCIPCI</string>
-			<key>IOClass</key>
-			<string>AppleUSBXHCILPTH</string>
-			<key>IOPCIPrimaryMatch</key>
-			<string>0xa12f8086</string>
-			<key>IOPCITunnelCompatible</key>
-			<true/>
-			<key>IOProbeScore</key>
-			<integer>1000</integer>
-			<key>IOProviderClass</key>
-			<string>IOPCIDevice</string>
-		</dict>
 		<key>iMac17,1-XHC</key>
 		<dict>
 			<key>CFBundleIdentifier</key>
