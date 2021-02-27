@@ -16,14 +16,6 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>Sets plugin-type = 1 on CPU0/PR00</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>SSDT-PLUG.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
 				<string>AppleUsbPower compatibility for Skylake+</string>
 				<key>Enabled</key>
 				<true/>
