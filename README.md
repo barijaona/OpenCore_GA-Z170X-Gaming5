@@ -66,7 +66,8 @@ Personally, I just reused data from my Clover configuration :
 
 - `BoardSerialNumber` in Clover's config.plist becomes the `MLB` in OpenCore's Config.plist
 - `SerialNumber` becomes `SystemSerialNumber`
-- `SmUUID` becomes `SystemUUID`.
+- `SmUUID` becomes `SystemUUID`
+- `ROM`: primary network adapter MAC address, can also be set at random but should be unique.
 
 If you want to generate your own serial numbers, you will have to follow the instructions regarding PlatformInfo [provided at the OpenCore Vanilla Desktop Guide](https://khronokernel-2.gitbook.io/opencore-vanilla-desktop-guide/) for the relevant processor family. This details the use of acidanthera's [macserial](https://github.com/acidanthera/MacInfoPkg) application.
 
