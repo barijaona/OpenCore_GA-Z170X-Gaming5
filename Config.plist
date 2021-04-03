@@ -14,14 +14,6 @@
 				<key>Path</key>
 				<string>ssdt_data.aml</string>
 			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>AppleUsbPower compatibility for Skylake+</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>SSDT-EC-USBX.aml</string>
-			</dict>
 		</array>
 		<key>Delete</key>
 		<array/>
@@ -540,8 +532,7 @@
 		<key>LegacyOverwrite</key>
 		<false/>
 		<key>LegacySchema</key>
-		<dict>
-		</dict>
+		<dict/>
 		<key>WriteFlash</key>
 		<true/>
 	</dict>
