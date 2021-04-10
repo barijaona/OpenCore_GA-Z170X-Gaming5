@@ -44,7 +44,7 @@ You will need to:
 - make your ports choice with the help of the included drawings, in order to respect the logical limit of 15 ports. It must be noted that physical USB3 ports use 2 logical ports: one for USB2 and one for USB3.
 - once you have made your choice, prune the Info.plist file included inside the .kext and put the modified GA\_Z170X\_G5\_Injector.kext into the `Kexts` folder.
 
-Another possible approach for customizing USB would be to use [USBMap](https://github.com/corpnewt/USBMap).
+Another possible approach for customizing USB would be to use [USBMap](https://github.com/corpnewt/USBMap) after temporarily enabling the `XhciPortLimit` quirk.
 
 #### CPU
 
@@ -54,7 +54,10 @@ Note that while Intel Skylake processors support HWP, Apple does not implement i
 
 If you intend to use the same SMBIOS and have a non-Skylake CPU, you will probably have to modify the `cf-frequency-data` entry into SSDT-CPU.aml. More details can be found at instructions for [CPUFriend installation](https://github.com/acidanthera/CPUFriend/blob/master/Instructions.md).
 
-If you find this a bit complex, just disable/remove `SSDT-CPU.aml` and `CPUFriend.kext`.
+If you find this a bit complex, you can:
+
+- just disable/remove `SSDT-CPU.aml` and `CPUFriend.kext`
+- or try a more recent SMBIOS (while `iMac18,1` to `iMac18,3` use Kaby Lake processors, their SMBIOS might be good with Skylake processors).
 
 #### iMessage, iTunes, AppStore…
 
@@ -65,13 +68,13 @@ Personally, I just reused data from my Clover configuration :
 - `BoardSerialNumber` in Clover's config.plist becomes the `MLB` in OpenCore's Config.plist
 - `SerialNumber` becomes `SystemSerialNumber`
 - `SmUUID` becomes `SystemUUID`
-- `ROM`: primary network adapter MAC address, can also be set at random but should be unique.
+- `ROM`: primary network adapter MAC address (can also be set at random but should be unique).
 
 If you want to generate your own serial numbers, you will have to follow the instructions regarding PlatformInfo [provided at the OpenCore Vanilla Desktop Guide](https://khronokernel-2.gitbook.io/opencore-vanilla-desktop-guide/) for the relevant processor family. This details the use of acidanthera's [macserial](https://github.com/acidanthera/MacInfoPkg) application.
 
 ### Additional notes
 
-Be safe ! A syntax error in your `Config.plist` may block booting:
+Be safe ! A syntax error in your `Config.plist` may block booting. So:
 
 - always backup your working `Config.plist` to `Config.sav`
 - after any modification of `Config.plist`, check it by running the `ocvalidate` tool (provided within OpenCore's 'Utilities' folder) with the file as an argument.
