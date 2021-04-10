@@ -507,7 +507,7 @@
 			</dict>
 			<dict>
 				<key>Arguments</key>
-				<string></string>
+				<string>interactive</string>
 				<key>Auxiliary</key>
 				<false/>
 				<key>Comment</key>
@@ -515,9 +515,9 @@
 				<key>Enabled</key>
 				<true/>
 				<key>Name</key>
-				<string>Grub shell with modified setup_var</string>
+				<string>Control MSR CFG Lock</string>
 				<key>Path</key>
-				<string>modGRUBShell.efi</string>
+				<string>ControlMsrE2.efi</string>
 				<key>RealPath</key>
 				<false/>
 				<key>TextMode</key>
