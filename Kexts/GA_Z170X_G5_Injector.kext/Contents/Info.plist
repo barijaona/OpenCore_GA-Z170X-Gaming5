@@ -34,14 +34,6 @@
 			<dict>
 				<key>kUSBMuxEnabled</key>
 				<true/>
-				<key>kUSBSleepPortCurrentLimit</key>
-				<integer>2100</integer>
-				<key>kUSBSleepPowerSupply</key>
-				<integer>5100</integer>
-				<key>kUSBWakePortCurrentLimit</key>
-				<integer>2100</integer>
-				<key>kUSBWakePowerSupply</key>
-				<integer>5100</integer>
 				<key>port-count</key>
 				<data>
 				BAAAAA==
@@ -52,8 +44,6 @@
 					<dict>
 						<key>UsbConnector</key>
 						<integer>10</integer>
-						<key>name</key>
-						<string>HS01</string>
 						<key>port</key>
 						<data>
 						AQAAAA==
@@ -63,8 +53,6 @@
 					<dict>
 						<key>UsbConnector</key>
 						<integer>3</integer>
-						<key>name</key>
-						<string>HS02</string>
 						<key>port</key>
 						<data>
 						AgAAAA==
@@ -74,8 +62,6 @@
 					<dict>
 						<key>UsbConnector</key>
 						<integer>10</integer>
-						<key>name</key>
-						<string>SS01</string>
 						<key>port</key>
 						<data>
 						AwAAAA==
@@ -85,8 +71,6 @@
 					<dict>
 						<key>UsbConnector</key>
 						<integer>3</integer>
-						<key>name</key>
-						<string>SS02</string>
 						<key>port</key>
 						<data>
 						BAAAAA==
@@ -103,22 +87,14 @@
 			<string>com.apple.driver.AppleUSBMergeNub</string>
 			<key>IOClass</key>
 			<string>AppleUSBMergeNub</string>
-			<key>IOPathMatch</key>
-			<string>IOService:/AppleACPIPlatformExpert/PCI0@0/AppleACPIPCI/XHC@14/XHC@14000000</string>
+			<key>IONameMatch</key>
+			<string>XHC</string>
 			<key>IOProviderClass</key>
 			<string>AppleUSBXHCIPCI</string>
 			<key>IOProviderMergeProperties</key>
 			<dict>
 				<key>kUSBMuxEnabled</key>
 				<true/>
-				<key>kUSBSleepPortCurrentLimit</key>
-				<integer>2100</integer>
-				<key>kUSBSleepPowerSupply</key>
-				<integer>5100</integer>
-				<key>kUSBWakePortCurrentLimit</key>
-				<integer>2100</integer>
-				<key>kUSBWakePowerSupply</key>
-				<integer>5100</integer>
 				<key>port-count</key>
 				<data>
 				GQAAAA==
@@ -129,8 +105,6 @@
 					<dict>
 						<key>UsbConnector</key>
 						<integer>3</integer>
-						<key>name</key>
-						<string>HS03</string>
 						<key>port</key>
 						<data>
 						AwAAAA==
@@ -140,8 +114,6 @@
 					<dict>
 						<key>UsbConnector</key>
 						<integer>3</integer>
-						<key>name</key>
-						<string>HS05</string>
 						<key>port</key>
 						<data>
 						BQAAAA==
@@ -151,8 +123,6 @@
 					<dict>
 						<key>UsbConnector</key>
 						<integer>3</integer>
-						<key>name</key>
-						<string>HS06</string>
 						<key>port</key>
 						<data>
 						BgAAAA==
@@ -162,8 +132,6 @@
 					<dict>
 						<key>UsbConnector</key>
 						<integer>0</integer>
-						<key>name</key>
-						<string>HS07</string>
 						<key>port</key>
 						<data>
 						BwAAAA==
@@ -173,8 +141,6 @@
 					<dict>
 						<key>UsbConnector</key>
 						<integer>255</integer>
-						<key>name</key>
-						<string>HS08</string>
 						<key>port</key>
 						<data>
 						CAAAAA==
@@ -184,8 +150,6 @@
 					<dict>
 						<key>UsbConnector</key>
 						<integer>0</integer>
-						<key>name</key>
-						<string>HS09</string>
 						<key>port</key>
 						<data>
 						CQAAAA==
@@ -195,8 +159,6 @@
 					<dict>
 						<key>UsbConnector</key>
 						<integer>0</integer>
-						<key>name</key>
-						<string>HS10</string>
 						<key>port</key>
 						<data>
 						CgAAAA==
@@ -206,8 +168,6 @@
 					<dict>
 						<key>UsbConnector</key>
 						<integer>255</integer>
-						<key>name</key>
-						<string>HS11</string>
 						<key>port</key>
 						<data>
 						CwAAAA==
@@ -217,8 +177,6 @@
 					<dict>
 						<key>UsbConnector</key>
 						<integer>0</integer>
-						<key>name</key>
-						<string>HS13</string>
 						<key>port</key>
 						<data>
 						DQAAAA==
@@ -228,8 +186,6 @@
 					<dict>
 						<key>UsbConnector</key>
 						<integer>0</integer>
-						<key>name</key>
-						<string>HS14</string>
 						<key>port</key>
 						<data>
 						DgAAAA==
@@ -239,8 +195,6 @@
 					<dict>
 						<key>UsbConnector</key>
 						<integer>3</integer>
-						<key>name</key>
-						<string>SS03</string>
 						<key>port</key>
 						<data>
 						EwAAAA==
@@ -250,8 +204,6 @@
 					<dict>
 						<key>UsbConnector</key>
 						<integer>3</integer>
-						<key>name</key>
-						<string>SS04</string>
 						<key>port</key>
 						<data>
 						FAAAAA==
@@ -261,8 +213,6 @@
 					<dict>
 						<key>UsbConnector</key>
 						<integer>3</integer>
-						<key>name</key>
-						<string>SS05</string>
 						<key>port</key>
 						<data>
 						FQAAAA==
@@ -272,8 +222,6 @@
 					<dict>
 						<key>UsbConnector</key>
 						<integer>3</integer>
-						<key>name</key>
-						<string>SS06</string>
 						<key>port</key>
 						<data>
 						FgAAAA==
@@ -283,8 +231,6 @@
 					<dict>
 						<key>UsbConnector</key>
 						<integer>3</integer>
-						<key>name</key>
-						<string>SS09</string>
 						<key>port</key>
 						<data>
 						GQAAAA==
